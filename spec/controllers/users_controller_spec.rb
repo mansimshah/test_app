@@ -6,8 +6,8 @@ RSpec.describe UsersController, type: :controller do
 
 	describe "GET User" do
 	    it "Retrieve User details" do
-			get :show, params: { id: user.id }, format: :json
-      		assert_response :success
+        get :show, params: { id: user.id }, format: :json
+        assert_response :success
 	  	end
 	end
 

@@ -8,7 +8,7 @@ RSpec.describe Api::V1::RegistrationsController, type: :controller do
 			@request.env["devise.mapping"] = Devise.mappings[:user]
 	  		expect {
         		post :create, user: (user), format: :json
-      		}.to change(User, :count).by(1)
+      	}.to change(User, :count).by(1)
 	  	end
 	end
 end
